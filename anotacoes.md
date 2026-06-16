@@ -36,3 +36,38 @@ ON  200 ms
 OFF 1000 ms
 
 Repetir continuamente.
+
+
+## 2026-06-16
+
+Hoje comecei a estudar C++ além do Arduino.
+
+Aprendi:
+
+- Funções podem receber valores como parâmetros.
+- Por padrão, C++ passa argumentos por valor (cópia).
+- Alterar uma cópia dentro da função não altera a variável original.
+- Referências permitem trabalhar com a variável original.
+
+## 2026-06-16
+
+Hoje avancei nos conceitos de memória em C++.
+
+Aprendi que uma variável possui:
+- um valor armazenado;
+- um endereço na memória.
+
+Também comecei a entender ponteiros:
+
+- um ponteiro é uma variável que guarda um endereço;
+- usando o operador * posso acessar o valor armazenado naquele endereço.
+
+Exemplo mental:
+
+variável:
+valor → 80
+
+ponteiro:
+endereço → onde está o valor
+
+Ainda estou consolidando esse conceito antes de avançar para aplicações mais complexas.
