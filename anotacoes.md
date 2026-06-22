@@ -71,3 +71,57 @@ ponteiro:
 endereço → onde está o valor
 
 Ainda estou consolidando esse conceito antes de avançar para aplicações mais complexas.
+
+
+
+## 2026-06-22
+
+Hoje continuei estudando ponteiros em C++.
+
+Percebi que minha maior dificuldade não era apenas entender ponteiros, mas separar os conceitos:
+
+- valor da variável;
+- endereço da variável;
+- cópia de uma variável;
+- acesso à variável original através de endereço.
+
+Reforcei que:
+
+- Uma variável possui um valor armazenado e um endereço na memória.
+- O operador & obtém o endereço de uma variável.
+- Um ponteiro é uma variável que armazena um endereço de memória.
+- O operador * pode acessar o valor armazenado naquele endereço.
+
+Exemplo mental:
+
+int numero = 10;
+
+int* p = &numero;
+
+Nesse caso:
+
+- numero guarda o valor 10;
+- p guarda o endereço de numero;
+- *p acessa o valor que está naquele endereço.
+
+Também revisei passagem de parâmetros em funções:
+
+Passagem por valor:
+
+void alterar(int x)
+
+A função recebe uma cópia do valor. Alterar x não altera a variável original.
+
+Passagem usando endereço:
+
+void alterar(int* x)
+
+A função recebe o endereço da variável e pode alterar o valor original usando *x.
+
+Aprendi que o nome da variável do ponteiro não define seu comportamento. Um ponteiro chamado sensor ou p funciona da mesma forma; o que importa é o tipo e como ele é utilizado.
+
+Minha principal dificuldade foi visualizar o fluxo:
+
+chamada da função → parâmetro recebido → acesso à memória → alteração do valor.
+
+Continuarei praticando para consolidar esse conceito.
